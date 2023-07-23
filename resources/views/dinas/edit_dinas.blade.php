@@ -83,7 +83,7 @@
 
     <div class="row mb-3">
         <label for="website" class="col-md-4 col-form-label text-md-end">Logo</label>
-        <img class="mb-2 custom-logo" src="{{Storage::url('files/'.$dinas->logo)}}" alt="">
+        <img class="mb-2 custom-logo" src="{{url('storage/files/'.$dinas->logo)}}" alt="">
         <div class="col-md-12">
             <input id="logo" type="file" class="form-control @error('logo') is-invalid @enderror" name="logo"
                 value="{{ old('logo') }}" autocomplete="logo" required autofocus>

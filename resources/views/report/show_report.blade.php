@@ -10,15 +10,15 @@
         <th>Foto</th>
         <th>Status</th>
         <th>Update</th>
-    </tr>    
+    </tr>
     <tr>
         <td>{{$report->judul}}</td>
         <td>{{$report->user->nama}}</td>
         <td>{{$report->isi}}</td>
         <td>{{$report->lokasi}}</td>
-        <td> <img src="{{Storage::url('files/'.$report->foto)}}" alt=""> </td>
+        <td> <img src="{{url('storage/files/'.$report->foto)}}" alt=""> </td>
         <td>{{$report->status}}</td>
-        
+
     </tr>
-</table>    
+</table>
 @endsection

@@ -88,7 +88,7 @@ class PostController extends Controller
 
         if ($request->file !== NULL) {
             $file = $request->file('file');
-            $name = time() . '_' . $request->judul . '.' . $file->getClientOriginalExtension();
+            $name = time() . '_' . Auth::user()->id . '.' . $file->getClientOriginalExtension();
             Storage::disk('local')->put('public/files/' . $name, file_get_contents($file));
         } else {
             $name = NULL;
@@ -195,7 +195,7 @@ class PostController extends Controller
 
         if ($request->file !== NULL) {
             $file = $request->file('file');
-            $name = time() . '_' . $request->judul . '.' . $file->getClientOriginalExtension();
+            $name = time() . '_' . Auth::user()->id . '.' . $file->getClientOriginalExtension();
             Storage::disk('local')->put('public/files/' . $name, file_get_contents($file));
 
             Post::where('id', $id)->update([

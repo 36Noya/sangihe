@@ -55,9 +55,9 @@
     <div class="row mb-3">
         <label for="file" class="col-md-4 col-form-label ">File</label>
         @if ($post->id_submenu === 10)
-        <a href="{{Storage::url('files/'.$post->file)}}" download>{{$post->file}}</a>
+        <a href="{{url('files/'.$post->file)}}" download>{{$post->file}}</a>
         @elseif ($post->submenu->type === 'multiple posts')
-        <img class="mb-2" src="{{Storage::url('files/'.$post->file)}}" alt="">
+        <img class="mb-2" src="{{url('storage/files/'.$post->file)}}" alt="">
         @endif
 
         <div class="col-md-6">

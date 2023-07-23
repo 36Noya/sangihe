@@ -47,7 +47,7 @@ class DinasController extends Controller
         ]);
 
         $logo = $request->file('logo');
-        $name = time() . '_' . $request->judul . '.' . $logo->getClientOriginalExtension();
+        $name = time() . '_' . Auth::user()->id . '.' . $logo->getClientOriginalExtension();
         Storage::disk('local')->put('public/files/' . $name, file_get_contents($logo));
 
         dinas::create(
@@ -98,7 +98,7 @@ class DinasController extends Controller
 
         if ($request->logo !== NULL) {
             $file = $request->file('logo');
-            $name = time() . '_' . $request->nama . '.' . $file->getClientOriginalExtension();
+            $name = time() . '_' . Auth::user()->id . '.' . $file->getClientOriginalExtension();
             Storage::disk('local')->put('public/files/' . $name, file_get_contents($file));
 
             dinas::where('id', $id)->update([

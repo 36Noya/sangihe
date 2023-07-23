@@ -63,7 +63,7 @@
         <label for="foto" class="col-md-4 col-form-label  ">Foto</label>
 
         <div class="col-md-12">
-            <img src="{{Storage::url('files/'.$report->foto)}}" alt="">
+            <img src="{{url('storage/files/'.$report->foto)}}" alt="">
         </div>
     </div>
 

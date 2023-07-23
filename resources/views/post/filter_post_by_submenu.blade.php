@@ -17,7 +17,7 @@
 
                 <div class="border">
 
-                    <img src="{{Storage::url('files/'.$post->file)}}" class="card-img-top img-fluid" alt="...">
+                    <img src="{{url('storage/files/'.$post->file)}}" class="card-img-top img-fluid" alt="...">
 
                     <div class="card-body row ">
                         <h6 class="card-title text-center ">{{$post->judul}}</h5>

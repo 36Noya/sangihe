@@ -15,7 +15,7 @@
                     @foreach ($berita as $key => $item)
 
                     <div class="carousel-item {{$key === 0 ? 'active' : ''}}" data-bs-interval="10000">
-                        <img src="{{Storage::url('files/'.$item->file)}}" class="carousel-img d-block w-100" alt="...">
+                        <img src="{{url('storage/files/'.$item->file)}}" class="carousel-img d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h1>{{$item->judul}}</h1>
                             <span class="d-inline small"><i class="fa fa-calendar"></i>
@@ -141,7 +141,7 @@
         <div class="row">
             @foreach ($berita as $key => $item)
             <div class="col-md-3 col-sm-6 col-xs-12 mb-5" style="text-align:justify">
-                <img src="{{Storage::url('files/'.$item->file)}}" class="img-fluid" alt="">
+                <img src="{{url('storage/files/'.$item->file)}}" class="img-fluid" alt="">
                 <h5 class="py-1">{{$item->judul}}</h5>
                 <span class="d-inline small"><i class="fa fa-calendar"></i>
                     {{date('d-m-Y',strtotime($item->created_at))}}</span>
@@ -167,7 +167,7 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
                         <iframe width="100%" style="border-radius: 1em;" height="400"
-                            src="https://www.youtube.com/embed/zaNcBvT8cBY" title="YouTube video player" frameborder="0"
+                            src="https://www.youtube.com/embed/ROQrk6cqA2g" title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                     </div>
@@ -176,8 +176,8 @@
                     @foreach ($photos as $photo)
 
                     <div class="col-md-6 col-sm-6 image-container">
-                        <img class="img-fluid rounded" style="height: 100%"
-                            src="{{Storage::url('files/'.$photo->file)}}" alt="Your Image">
+                        <img class="img-fluid rounded" style="height: 100%" src="{{url('storage/files/'.$photo->file)}}"
+                            alt="Your Image">
                         <div class="image-text">
                             <h6>
                                 <a href="{{route('posts.show', $photo->id)}}">
@@ -223,7 +223,7 @@
                             <div class="card">
                                 <div class="image-wrapper">
                                     <a href="{{route('posts.show', $item->id)}}"><img
-                                            src="{{Storage::url('files/'.$item->file)}}" alt="..."></a>
+                                            src="{{url('storage/files/'.$item->file)}}" alt="..."></a>
                                 </div>
                             </div>
                             @if ($key == 2 OR $key == 5 OR $key == 8 )

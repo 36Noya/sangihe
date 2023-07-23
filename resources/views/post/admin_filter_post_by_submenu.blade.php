@@ -80,9 +80,9 @@
         <td>{{$post->user->nama}}</td>
         <td>
             @if ($post->submenu->id !== 10)
-            <img src="{{Storage::url('files/'.$post->file)}}" alt="">
+            <img src="{{url('storage/files/'.$post->file)}}" alt="">
             @else
-            <a href="{{Storage::url('files/'.$post->file)}}" download>{{$post->file}}</a>
+            <a href="{{url('storage/files/'.$post->file)}}" download>{{$post->file}}</a>
             @endif
         </td>
         <td>

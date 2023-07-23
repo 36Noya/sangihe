@@ -21,8 +21,8 @@
         <td>{{$report->user->nama}}</td>
         <td>{{$report->isi}}</td>
         <td>{{$report->lokasi}}</td>
-        <td> <a class="text-decoration-none" target="_blank" href="{{Storage::url('files/'.$report->foto)}}"
-                alt="">Lihat Gambar</a> </td>
+        <td> <a class="text-decoration-none" target="_blank" href="{{url('storage/files/'.$report->foto)}}" alt="">Lihat
+                Gambar</a> </td>
         <td class='text-capitalize'>{{$report->status}}</td>
         @if (Auth::check() && Auth::user()->jenis_user === 'admin')
 

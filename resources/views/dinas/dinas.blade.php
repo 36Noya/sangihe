@@ -6,7 +6,7 @@
     <div class="col-md-12 bg-light border p-2">
         <div class="row ">
             <div class="col-md-2 custom-dinas-wrapper">
-                <img class="img-fluid custom-dinas-img mt-3" src="{{Storage::url('files/'.$item->logo)}}" alt="">
+                <img class="img-fluid custom-dinas-img mt-3" src="{{url('storage/files/'.$item->logo)}}" alt="">
             </div>
             <div class="col-md-9">
 
