@@ -127,10 +127,10 @@ class DinasController extends Controller
     public function destroy($id)
     {
         $dinas = dinas::whereId($id)->first();
-        Storage::delete('public/files/' . $dinas->file);
+        Storage::delete('public/files/' . $dinas->logo);
 
         $dinas->delete();
 
-        return Redirect::route('dinas.dinas');
+        return Redirect::route('dinas.index');
     }
 }

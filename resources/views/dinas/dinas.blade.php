@@ -34,10 +34,26 @@
                         <a target='_blank' class="btn btn-danger custom-btn-primary fs-6"" href="
                             {{$item->website}}">Kunjungi
                             Website</a>
+                        @if (Auth::check() && Auth::user()->jenis_user == 'admin')
+
                         <a target='_blank' class="btn btn-warning  fs-6"" href=" {{route('dinas.edit',
                             $item->id)}}">Edit</a>
+                        @endif
+
                     </div>
                 </div>
+                @if (Auth::check() && Auth::user()->jenis_user == 'admin')
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <form class="p-0 col-md-12" action="{{route('dinas.destroy', $item->id)}}" method="post">
+                            @csrf
+                            @method('delete')
+                            <button class=" btn btn-secondary mt-1 " type="submit">Delete</button>
+                        </form>
+                    </div>
+                </div>
+                @endif
             </div>
         </div>
     </div>

@@ -26,6 +26,12 @@
                             @if (Auth::check() && Auth::user()->jenis_user === 'admin')
                             <a href="{{route('posts.edit', $post->id)}}"
                                 class="btn btn-warning text-light mt-1">Edit</a>
+
+                            <form class="p-0" action="{{route('posts.destroy', $post->id)}}" method="post">
+                                @csrf
+                                @method('delete')
+                                <button class=" btn btn-secondary mt-1 col-md-12" type="submit">Delete</button>
+                            </form>
                             @endif
                     </div>
                 </div>
