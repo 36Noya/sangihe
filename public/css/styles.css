@@ -1,0 +1,296 @@
+*,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+html,
+body {
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+:root {
+    --primary: rgba(223, 16, 36, 1);
+    --action: #DCD6D7;
+    --secondary: #625A67;
+    --dark: rgba(48, 43, 49, 1);
+    --black: rgba(0, 0, 0, 1);
+    --white: #FFF;
+}
+
+body {
+    height: 100vh;
+    
+}
+
+.bg-gradient-custom {
+
+    background-image: url('img/bg2.png');
+    background-repeat: no-repeat;
+    /* background-color: linear-gradient(0deg, rgba(255, 255, 255, 1) 30%, rgba(255, 0, 0, 1) 100%); */
+}
+
+.custom-dark-bg{
+    background-color: var(--dark);
+}
+
+.custom-login{
+    background-color: var(--white);
+}
+
+#custom-footer {
+    background-color: var(--dark);
+    color: var(--action);
+}
+
+#custom-footer a {
+    color: var(--action);
+}
+
+.custom-container {
+    border-radius: 12px;
+    background-color: #FFF;
+    box-shadow: 0px 8px 12px 0px rgba(220, 214, 215, 0.80);
+}
+
+.sub-menu {
+    border: 1px solid var(--stoke-1, rgba(220, 214, 215, 0.60));
+    box-shadow: 0px 2px 20px 0px rgba(220, 214, 215, 0.40);
+    color: var(--secondary);
+}
+
+.submenu-font {
+
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.submenu-font-selected {
+
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.sub-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.card-img-top {
+    height: 30vh;
+    object-fit: cover;
+}
+
+.custom-btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.custom-carousel-inner {
+    width: 100vw !important;
+    /* height: 85vh !important; */
+}
+
+/* ================== ALAN'S CSS ================ */
+
+.card:hover {
+    background-color: #333;
+    /* Ganti dengan warna gelap yang Anda inginkan */
+    transition: .3s;
+}
+
+/* CSS untuk teks dan ikon SVG saat mouse hover */
+.card:hover h2,
+.card:hover p,
+.card:hover svg,
+.card:hover path {
+    color: white;
+    /* Ganti dengan warna putih atau warna lain yang Anda inginkan */
+    fill: white;
+}
+
+.card:hover a {
+    background: var(--primary);
+}
+
+/* CSS untuk tombol anchor saat mouse hover */
+.card a.card-link:hover {
+    background-color: #DF1024;
+    /* Ganti dengan warna merah yang Anda inginkan */
+    color: white;
+    /* Ganti dengan warna putih atau warna lain yang Anda inginkan */
+}
+
+.icon-big-red {
+    font-size: 3em;
+    color: var(--primary);
+    margin: 10px 0px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #222;
+    font-weight: 700;
+    border: 2px solid var(--primary);
+    padding: .3em 1em;
+    border-radius: .3em;
+}
+
+/* ===== CARD CAROUSEL ======== */
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.image-wrapper {
+    height: 33vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.carousel .card {
+    margin: 0 .5rem;
+    width: calc(100/3);
+
+}
+
+/* ============================ */
+.card-link:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.more {
+    color: var(--primary);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -100%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-text h6 a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.image-container:hover .image-text {
+    opacity: 1;
+}
+
+.visi_misi {
+    color: var(--primary)
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* CSS untuk mengubah tampilan poin indikator aktif */
+.carousel-link-btn {
+    line-height: 1em;
+    margin: 50px 0;
+    text-decoration: none;
+    color: white;
+    background: var(--primary);
+    padding: .5em 1em;
+    border-radius: .1em;
+}
+
+#carouselExampleDark {
+    height: 550px;
+    background: #666;
+}
+
+.carousel-link-btn:hover {
+    color: #eee;
+}
+
+.carousel img {
+    height: 550px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    text-shadow: 3px 5px 8px #000;
+    text-align: left;
+    transform: translate(0, -50%);
+    font-size: 1em;
+}
+
+.custom-dinas-img{
+    object-fit: cover;
+}
+
+.custom-dinas-wrapper{
+    flex-direction: column;
+}
+
+.custom-logo{
+    max-width: 250px;
+    max-height: 250px;
+}
+
+@media screen and (max-width:767px) {
+    .carousel-caption {
+        text-shadow: 3px 5px 8px rgb(124, 18, 18);
+        text-align: left;
+        transform: translate(0, -100%);
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .carousel-caption {
+        text-shadow: 3px 5px 8px #000;
+        text-align: left;
+        transform: translate(0, -100%);
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:1123px) {
+    .carousel-caption {
+        text-shadow: 3px 5px 8px #333;
+        text-align: left;
+        transform: translate(0, -50%);
+        font-size: 1em;
+    }
+}
+
+
+
+.pagination>.active>.page-link{
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--white);
+}
+
+.pagination>.page-item>a{
+    color: var(--black);
+}
