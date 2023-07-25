@@ -4,12 +4,12 @@
 <div class="container-fluid bg-gradient-custom  ">
     {{-- <a href="{{route('home')}}">Home</a> --}}
     <div class="d-flex justify-content-center">
-        <div class="d-flex w-75 h-75 p-5 m-4 custom-container row">
+        <div class="d-flex w-100 h-75 p-5 m-4 custom-container row">
             <div class=" col-md-3 col-sm-12 mb-1">
                 <div class="row sub-menu">
                     <div class="p-3">
                         {{-- Menu --}}
-                        @if (Auth::check() && Auth::user()->jenis_user === 'admin')
+                        @if (Auth::check() && Auth::user()->jenis_user === 'user' )
                         <div class="p-1">
                             <a class="fw-bold {{(request()->segment(2) == 'create') ? 'submenu-font-selected' : 'submenu-font'}}"
                                 href="{{route('reports.create')}}">Ajukan Pengaduan</a>

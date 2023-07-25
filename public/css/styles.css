@@ -294,3 +294,7 @@ body {
 .pagination>.page-item>a{
     color: var(--black);
 }
+
+.custom-submenu-a:hover{
+    color: var(--primary);
+}

@@ -91,7 +91,7 @@
 
 
     <div class="row mb-3">
-        <button class="btn btn-danger custom-btn-primary" type="submit">Submit </button>
+        <button class="btn btn-danger custom-btn-primary" type="submit">Kirim </button>
     </div>
 </form>
 @else

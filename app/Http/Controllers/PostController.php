@@ -25,6 +25,7 @@ class PostController extends Controller
         $visi = Post::where('id_submenu', 1)->get();
 
 
+
         return view('post/index', ['berita' => $berita, 'photos' => $photos, 'visi' => $visi, 'layananPublik' => $layananPublik]);
     }
 

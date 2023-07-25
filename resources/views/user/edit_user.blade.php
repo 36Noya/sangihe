@@ -90,6 +90,6 @@
     </div>
 
 
-    <button class="btn btn-danger custom-btn-primary col-md-12" type="submit">Submit </button>
+    <button class="btn btn-danger custom-btn-primary col-md-12" type="submit">Ubah </button>
 </form>
 @endsection

@@ -145,8 +145,7 @@
                 <h5 class="py-1">{{$item->judul}}</h5>
                 <span class="d-inline small"><i class="fa fa-calendar"></i>
                     {{date('d-m-Y',strtotime($item->created_at))}}</span>
-                <p class="mb-2 mt-1">{{$item->isi}}
-                </p>
+
                 <a href="{{route('posts.show', $item->id)}}" class="more d-inline">Selengkapnya <i
                         class="fa fa-arrow-right"></i></a>
             </div>
@@ -208,7 +207,7 @@
     </div>
 
     <!-- Carousel -->
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
             <div id="carouselExampleControlsNoTouching" class="carousel carousel-dark slide" data-bs-touch="false">
 
@@ -255,13 +254,7 @@
 </div>
 
 
-<div class="container">
-    <div class="row  p-5">
-        <div class="col-md-4 col-sm-12 col-xs-12">
-            {!! $visi[0]->isi !!}
-        </div>
-    </div>
-</div>
+
 </div>
 
 

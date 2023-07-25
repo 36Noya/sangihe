@@ -37,13 +37,65 @@
                         <a class="nav-link active" aria-current="page" href="{{route('users.index')}}">User</a>
                     </li>
                     @endif
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{route('posts.index')}}">Beranda</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tentang Sangihe
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{{route('posts.show_single_post', 1)}}">Visi dan Misi</a>
+                            </li>
+                            <li><a class="dropdown-item" href="{{route('posts.show_single_post', 2)}}">Moto Daerah</a>
+                            </li>
+
+                            <li><a class="dropdown-item" href="{{route('posts.show_single_post', 4)}}">Sejarah
+                                    Sangihe</a></li>
+                            <li><a class="dropdown-item" href="{{route('posts.show_single_post', 5)}}">Struktur
+                                    Pemerintahan</a></li>
+                            <li><a class="dropdown-item" href="{{route('posts.show_single_post', 6)}}">Kependudukan</a>
+                            </li>
+                            <li><a class="dropdown-item" href="{{route('posts.filter_post_by_submenu', 7)}}">Tempat
+                                    Wisata</a></li>
+                            <li><a class="dropdown-item" href="{{route('dinas.index')}}">Perangkat Daerah</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Layanan & Informasi Publik
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{{route('posts.filter_post_by_submenu', 8)}}">Layanan
+                                    Publik</a></li>
+                            <li><a class="dropdown-item" href="{{route('posts.filter_post_by_submenu', 9)}}">Berita
+                                    Sangihe</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="{{route('posts.filter_post_by_submenu', 10)}}">Dokumentasi
+                                    Publik</a></li>
+                            <li><a class="dropdown-item" href="{{route('posts.filter_post_by_submenu', 12)}}">Galeri
+                                    Foto</a></li>
+                            <li><a class="dropdown-item" href="{{route('posts.show_single_post', 13)}}">Maps</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{route('reports.index')}}">Pengaduan
+                            Masyarakat</a>
+                    </li>
                     @if (Auth::check())
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-dark " href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Profile
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu me-2" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="{{route('users.show', Auth::id())}}">Profile</a>
                             </li>
                             <li>
@@ -62,55 +114,6 @@
                     </li>
 
                     @endif
-
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{route('posts.index')}}">Beranda</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Tentang Sangihe
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="{{route('posts.show_single_post', 1)}}">Visi dan Misi</a>
-                            </li>
-                            <li><a class="dropdown-item" href="{{route('posts.show_single_post', 2)}}">Moto Daerah</a>
-                            </li>
-                            <li><a class="dropdown-item" href="{{route('posts.show_single_post', 3)}}">Lambang
-                                    Sangihe</a></li>
-                            <li><a class="dropdown-item" href="{{route('posts.show_single_post', 4)}}">Sejarah
-                                    Sangihe</a></li>
-                            <li><a class="dropdown-item" href="{{route('posts.show_single_post', 5)}}">Profile Bupati
-                                    dan Wakil Bupati</a></li>
-                            <li><a class="dropdown-item" href="{{route('posts.show_single_post', 6)}}">Kependudukan</a>
-                            </li>
-                            <li><a class="dropdown-item" href="{{route('posts.filter_post_by_submenu', 7)}}">Tempat
-                                    Wisata</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Layanan & Informasi Publik
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="{{route('posts.filter_post_by_submenu', 8)}}">Layanan
-                                    Publik</a></li>
-                            <li><a class="dropdown-item" href="{{route('posts.filter_post_by_submenu', 9)}}">Dokumentasi
-                                    Publik</a></li>
-                            <li><a class="dropdown-item" href="{{route('posts.filter_post_by_submenu', 12)}}">Galeri
-                                    Foto</a></li>
-                            <li><a class="dropdown-item" href="{{route('posts.show_single_post', 13)}}">Maps</a></li>
-                            <li><a class="dropdown-item" href="{{route('posts.filter_post_by_submenu', 9)}}">Berita
-                                    Sangihe</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{route('reports.index')}}">Pengaduan
-                            Masyarakat</a>
-                    </li>
 
                 </ul>
 
@@ -133,24 +136,26 @@
             <p><a href="{{route('posts.show_single_post', 2)}}" class=" text-decoration-none">Moto Daerah</a>
             </p>
             <p>
-            <p><a href="{{route('posts.show_single_post', 3)}}" class=" text-decoration-none">Lambang
-                    Sangihe</a></p>
+
             <p><a href="{{route('posts.show_single_post', 4)}}" class=" text-decoration-none">Sejarah
                     Sangihe</a></p>
-            <p><a href="{{route('posts.show_single_post', 5)}}" class=" text-decoration-none">Profil Bupati
-                    dan Wakil Bupati</a></p>
+            <p><a href="{{route('posts.show_single_post', 5)}}" class=" text-decoration-none">Struktur Pemerintahan</a>
+            </p>
             <p><a href="{{route('posts.show_single_post', 6)}}" class=" text-decoration-none">Kependudukan</a></p>
             <p><a href="{{route('posts.filter_post_by_submenu', 7)}}" class=" text-decoration-none">Tempat Wisata</a>
             </p>
-            <p><a href="{{route('posts.filter_post_by_submenu', 11)}}" class=" text-decoration-none">Infografis</a></p>
+
         </div>
         <div class="p-2 bd-highlight col-md-3">
             <p class="fw-bold">Layanan & Informasi Publik</p>
-            <p><a href="" class=" text-decoration-none">Layanan Publik</a></p>
-            <p><a href="" class=" text-decoration-none">Dokumentasi Publik</a></p>
-            <p><a href="" class=" text-decoration-none">Infografis</a></p>
-            <p><a href="" class=" text-decoration-none">Galeri Foto</a></p>
-            <p><a href="" class=" text-decoration-none">Maps</a></p>
+            <p><a href="{{route('posts.filter_post_by_submenu', 8)}}" class=" text-decoration-none">Layanan Publik</a>
+            </p>
+            <p><a href="{{route('posts.filter_post_by_submenu', 9)}}" class=" text-decoration-none">Berita Sangihe</a>
+            </p>
+            <p><a href="{{route('posts.filter_post_by_submenu', 10)}}" class=" text-decoration-none">Dokumentasi
+                    Publik</a></p>
+            <p><a href="{{route('posts.show_single_post', 12)}}" class=" text-decoration-none">Galeri Foto</a></p>
+            <p><a href="{{route('posts.show_single_post', 13)}}" class=" text-decoration-none">Maps</a></p>
         </div>
         <div class="p-2 bd-highlight col-md-3">
             <p class="fw-bold">Alamat</p>

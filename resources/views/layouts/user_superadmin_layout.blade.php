@@ -4,7 +4,7 @@
 <div class="container-fluid bg-gradient-custom  ">
     {{-- <a href="{{route('home')}}">Home</a> --}}
     <div class="d-flex justify-content-center">
-        <div class="d-flex w-75 h-75 p-5 m-4 custom-container row">
+        <div class="d-flex w-100 h-75 p-5 m-4 custom-container row">
             <div class=" col-md-3 col-sm-12 mb-1">
                 <div class="row sub-menu">
                     <div class="p-3">
