@@ -50,7 +50,8 @@
 
         <div class="row">
             <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="card text-center shadow-lg p-4 mb-5 bg-body-tertiary" style="border-radius:0.5em">
+                <div class="custom-card-index card text-center shadow-lg p-4 mb-5 bg-body-tertiary"
+                    style="border-radius:0.5em">
                     <div class="card-body">
                         <svg width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="mdi:google-maps">
@@ -67,7 +68,8 @@
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="card text-center shadow-lg p-4 mb-5 bg-body-tertiary" style="border-radius:0.5em">
+                <div class="custom-card-index card text-center shadow-lg p-4 mb-5 bg-body-tertiary"
+                    style="border-radius:0.5em">
                     <div class="card-body">
                         <svg width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="formkit:people" clip-path="url(#clip0_230_1687)">
@@ -92,7 +94,8 @@
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="card text-center shadow-lg p-4 mb-5 bg-body-tertiary" style="border-radius:0.5em">
+                <div class="custom-card-index card text-center shadow-lg p-4 mb-5 bg-body-tertiary"
+                    style="border-radius:0.5em">
                     <div class="card-body">
                         <svg width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="material-symbols:history-edu-outline-rounded">
@@ -109,7 +112,8 @@
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="card text-center shadow-lg p-4 mb-5 bg-body-tertiary" style="border-radius:0.5em">
+                <div class="custom-card-index card text-center shadow-lg p-4 mb-5 bg-body-tertiary"
+                    style="border-radius:0.5em">
                     <div class="card-body">
                         <svg width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="game-icons:village">
@@ -141,8 +145,9 @@
         <div class="row">
             @foreach ($berita as $key => $item)
             <div class="col-md-3 col-sm-6 col-xs-12 mb-5" style="text-align:justify">
-                <img src="{{url('storage/files/'.$item->file)}}" class="img-fluid" alt="">
+                <img src="{{url('storage/files/'.$item->file)}}" class="img-fluid card-img-top" alt="">
                 <h5 class="py-1">{{$item->judul}}</h5>
+                <div class="custom-isi-berita-index">{!!$item->isi!!}</div>
                 <span class="d-inline small"><i class="fa fa-calendar"></i>
                     {{date('d-m-Y',strtotime($item->created_at))}}</span>
 

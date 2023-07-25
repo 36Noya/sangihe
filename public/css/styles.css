@@ -36,6 +36,10 @@ body {
     background-color: var(--dark);
 }
 
+.custom-dark-font{
+    color: var(--dark);
+}
+
 .custom-login{
     background-color: var(--white);
 }
@@ -298,3 +302,90 @@ body {
 .custom-submenu-a:hover{
     color: var(--primary);
 }
+
+.custom-isi>p>img{
+    max-width: 900px;
+    object-fit: contain;
+}
+
+.card-link {
+    font-size: 0.8rem;
+}
+
+.custom-card-index {
+    min-height: 400px !important;
+}
+
+.custom-isi-berita-index{
+    height: 100px;
+}
+
+.custom-isi-berita-index>p{
+    display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+    overflow: hidden;
+        text-overflow: ellipsis;
+}
+
+.custom-isi-berita-index>p>img{
+    display: none;
+}
+
+.custom-isi>table>tbody>tr{
+    border: 1px solid black;
+}
+.custom-isi>table>tbody>tr>td{
+    border: 1px solid black;
+}
+
+.dropdown-item:hover{
+    color: var(--primary);
+    font-weight: bold;
+}
+
+@media screen and  (max-width:1100px) {
+    .custom-isi>p>img {
+            max-width: 600px;
+            object-fit: contain;
+        }
+        .custom-card-index {
+            min-height: 500px !important;
+        }
+    .card-link{
+        font-size: 0.9rem;
+    }
+
+    .card-text{
+        font-size: 0.9rem
+    }
+
+    h2{
+        font-size: 0.9rem;
+    }
+}
+
+    @media screen and (max-width:768px) {
+    .custom-isi>p>img {
+            max-width: 450px;
+            object-fit: contain;
+        }
+    .custom-card-index {
+        min-height: 400px !important;
+    }
+    .card-link {
+        font-size: 0.5rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem
+    }
+}
+
+@media screen and (max-width:425px) {
+    .custom-isi>p>img {
+            max-width: 250px;
+            object-fit: contain;
+        }
+}
+

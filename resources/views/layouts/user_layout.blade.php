@@ -11,11 +11,11 @@
                         {{-- Menu --}}
 
                         <div class="p-1">
-                            <a class="fw-bold {{(request()->segment(3) != 'edit') ? 'submenu-font-selected' : 'submenu-font'}}"
+                            <a class="custom-submenu-a fw-bold {{(request()->segment(3) != 'edit') ? 'submenu-font-selected' : 'submenu-font'}}"
                                 href="{{route('users.show', Auth::id())}}">Profile</a>
                         </div>
                         <div class="p-1">
-                            <a class="fw-bold {{(request()->segment(3) == 'edit') ? 'submenu-font-selected' : 'submenu-font'}}"
+                            <a class="custom-submenu-a fw-bold {{(request()->segment(3) == 'edit') ? 'submenu-font-selected' : 'submenu-font'}}"
                                 href="{{(route('users.edit', Auth::id()))}}">Ubah Profile</a>
                         </div>
 

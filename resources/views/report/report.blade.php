@@ -22,7 +22,7 @@
         <td>{{$report->user->nama}}</td>
         <td>{{$report->isi}}</td>
         <td>{{$report->lokasi}}</td>
-        <td>{{$report->tgl_kejadian}}</td>
+        <td>{{date('d-m-Y',strtotime($report->tgl_kejadian))}}</td>
         <td> <a class="text-decoration-none" target="_blank" href="{{url('storage/files/'.$report->foto)}}" alt="">Lihat
                 Gambar</a> </td>
         <td class='text-capitalize'>{{$report->status}}</td>

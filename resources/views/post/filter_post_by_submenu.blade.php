@@ -46,7 +46,7 @@
 @foreach ($posts as $post)
 
 <div class="row">
-    <div class="col-md-12 bg-light border p-2">
+    <div class="col-md-12 ms-3 bg-light border p-2">
         <div class="row ">
             <div class="col-md-2 ">
                 <img class="img-fluid" src="{{URL::to('assets/img/pdf-icon.svg')}}" alt="">

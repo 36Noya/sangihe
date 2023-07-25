@@ -11,17 +11,17 @@
                         {{-- Menu --}}
                         @if (Auth::check() && Auth::user()->jenis_user === 'user' )
                         <div class="p-1">
-                            <a class="fw-bold {{(request()->segment(2) == 'create') ? 'submenu-font-selected' : 'submenu-font'}}"
+                            <a class="custom-submenu-a fw-bold {{(request()->segment(2) == 'create') ? 'submenu-font-selected' : 'submenu-font'}}"
                                 href="{{route('reports.create')}}">Ajukan Pengaduan</a>
                         </div>
                         @endif
                         <div class="p-1">
-                            <a class="fw-bold {{(request()->segment(2) == '') ? 'submenu-font-selected' : 'submenu-font'}}"
+                            <a class="custom-submenu-a fw-bold {{(request()->segment(2) == '') ? 'submenu-font-selected' : 'submenu-font'}}"
                                 href="{{(route('reports.index'))}}">Semua Pengaduan</a>
                         </div>
-                        @if (Auth::check())
+                        @if (Auth::check() && Auth::user()->jenis_user === 'user')
                         <div class="p-1">
-                            <a class="fw-bold {{(request()->segment(2) == 'showAllReportsByUserId') ? 'submenu-font-selected' : 'submenu-font'}}"
+                            <a class="custom-submenu-a fw-bold {{(request()->segment(2) == 'showAllReportsByUserId') ? 'submenu-font-selected' : 'submenu-font'}}"
                                 href="{{route('reports.show_report_by_user_id')}}">Pengaduan
                                 Saya</a>
                         </div>
