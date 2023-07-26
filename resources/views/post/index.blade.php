@@ -5,10 +5,12 @@
         <div class="col-md-12">
             <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
+                    @foreach ($berita as $key => $item)
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="{{$key}}"
+                        class="{{$key === 0 ? 'active' : ''}}" aria-current="true"
+                        aria-label="Slide {{$key++;}}"></button>
+
+                    @endforeach
                 </div>
 
                 <div class="carousel-inner custom-carousel-inner">
@@ -273,22 +275,6 @@
 <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script>
-    $(document).ready(function(){
-      // Inisialisasi Owl Carousel dengan indikator
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            dots: true, // Tampilkan indikator (dots)
-            responsive:{
-            0:{
-                items: 1
-            },
-            600:{
-                items: 2
-            }
-            }
-        });
-        });
+
 </script>
 @endsection

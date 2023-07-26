@@ -303,6 +303,12 @@ body {
     color: var(--primary);
 }
 
+.dropdown-item:active{
+        background-color: var(--white);
+}
+
+
+
 .custom-isi>p>img{
     max-width: 900px;
     object-fit: contain;
@@ -328,6 +334,10 @@ body {
         text-overflow: ellipsis;
 }
 
+.custom-isi-berita-index>p:not(:first-child) {
+    display: none;
+}
+
 .custom-isi-berita-index>p>img{
     display: none;
 }
@@ -341,17 +351,16 @@ body {
 
 .dropdown-item:hover{
     color: var(--primary);
-    font-weight: bold;
 }
 
 @media screen and  (max-width:1100px) {
     .custom-isi>p>img {
             max-width: 600px;
             object-fit: contain;
-        }
-        .custom-card-index {
-            min-height: 500px !important;
-        }
+    }
+    .custom-card-index {
+        min-height: 500px !important;
+    }
     .card-link{
         font-size: 0.9rem;
     }
