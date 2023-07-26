@@ -311,6 +311,7 @@ body {
 
 .custom-isi>p>img{
     max-width: 900px;
+    max-height: 900px;
     object-fit: contain;
 }
 
@@ -356,6 +357,7 @@ body {
 @media screen and  (max-width:1100px) {
     .custom-isi>p>img {
             max-width: 600px;
+            max-height: 600px;
             object-fit: contain;
     }
     .custom-card-index {
@@ -377,6 +379,7 @@ body {
     @media screen and (max-width:768px) {
     .custom-isi>p>img {
             max-width: 450px;
+            max-height: 450px;
             object-fit: contain;
         }
     .custom-card-index {
@@ -394,7 +397,19 @@ body {
 @media screen and (max-width:425px) {
     .custom-isi>p>img {
             max-width: 250px;
+            max-height: 250px;
             object-fit: contain;
         }
 }
 
+@media screen and (max-width:320px) {
+    .custom-isi>p>img {
+            max-width: 150px;
+            max-height: 150px;
+            object-fit: contain;
+        }
+}
+
+.more:hover{
+    color: var(--dark);
+}

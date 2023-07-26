@@ -89,8 +89,7 @@
                             </defs>
                         </svg>
                         <h2 class="card-title">Layanan Publik</h2>
-                        <p class="card-text mb-3">Carilah tempat-tempat yang ingin anda kunjungi di kabupaten kepulauan
-                            Sangihe</p>
+                        <p class="card-text mb-3">Berikut ini daftar layanan publik di Kabupaten Kepulauan Sangihee</p>
                         <a href="{{route('posts.filter_post_by_submenu', 8)}}" class="card-link">Selengkapnya</a>
                     </div>
                 </div>
@@ -107,7 +106,7 @@
                             </g>
                         </svg>
                         <h2 class="card-title">Sejarah</h2>
-                        <p class="card-text mb-3">Carilah tempat-tempat yang ingin anda kunjungi di kabupaten kepulauan
+                        <p class="card-text mb-3">Dari berbagai sumber yang memberikan informasi tentang arti nama
                             Sangihe</p>
                         <a href="{{route('posts.show_single_post', 4)}}" class="card-link">Selengkapnya</a>
                     </div>
@@ -126,8 +125,8 @@
                         </svg>
 
                         <h2 class="card-title">Kependudukan</h2>
-                        <p class="card-text mb-3">Carilah tempat-tempat yang ingin anda kunjungi di kabupaten kepulauan
-                            Sangihe</p>
+                        <p class="card-text mb-3">Berikut adalah daftar kecamatan dan desa/kelurahan di Kabupaten
+                            Kepulauan Sangihe</p>
                         <a href="{{route('posts.show_single_post', 6)}}" class="card-link">Selengkapnya</a>
                     </div>
                 </div>
@@ -149,9 +148,10 @@
             <div class="col-md-3 col-sm-6 col-xs-12 mb-5" style="text-align:justify">
                 <img src="{{url('storage/files/'.$item->file)}}" class="img-fluid card-img-top" alt="">
                 <h5 class="py-1">{{$item->judul}}</h5>
-                <div class="custom-isi-berita-index">{!!$item->isi!!}</div>
                 <span class="d-inline small"><i class="fa fa-calendar"></i>
                     {{date('d-m-Y',strtotime($item->created_at))}}</span>
+                <div class="custom-isi-berita-index">{!!$item->isi!!}</div>
+
 
                 <a href="{{route('posts.show', $item->id)}}" class="more d-inline">Selengkapnya <i
                         class="fa fa-arrow-right"></i></a>

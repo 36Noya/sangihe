@@ -49,7 +49,8 @@
                             Tentang Sangihe
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="{{route('posts.show_single_post', 1)}}">Visi dan Misi</a>
+                            <li><a class="dropdown-item" href="{{route('posts.show_single_post', 1)}}">Visi Misi dan
+                                    Lambang</a>
                             </li>
                             <li><a class="dropdown-item" href="{{route('posts.show_single_post', 2)}}">Moto Daerah</a>
                             </li>
@@ -143,6 +144,8 @@
             </p>
             <p><a href="{{route('posts.show_single_post', 6)}}" class=" text-decoration-none">Kependudukan</a></p>
             <p><a href="{{route('posts.filter_post_by_submenu', 7)}}" class=" text-decoration-none">Tempat Wisata</a>
+            </p>
+            <p><a href="{{route('dinas.index')}}" class=" text-decoration-none">Perangkat Daerah</a>
             </p>
 
         </div>

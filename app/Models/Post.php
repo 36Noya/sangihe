@@ -25,11 +25,11 @@ class Post extends Model implements Hasmedia
 
     public function user(): BelongsTo
     {
-        return $this->belongsTo(User::class, 'id_user');
+        return $this->belongsTo(User::class, 'id_user')->withTrashed();
     }
 
     public function submenu(): BelongsTo
     {
-        return $this->belongsTo(Submenu::class, 'id_submenu');
+        return $this->belongsTo(Submenu::class, 'id_submenu')->withTrashed();
     }
 }
