@@ -219,6 +219,9 @@
             <div id="carouselExampleControlsNoTouching" class="carousel carousel-dark slide" data-bs-touch="false">
 
                 <div class="carousel-inner">
+                    @php
+                    $key=2;
+                    @endphp
                     @foreach ($layananPublik as $key=>$item)
 
                     @if ($key === 0 OR $key === 3 OR $key === 6)
