@@ -150,7 +150,7 @@
                 <h5 class="py-1">{{$item->judul}}</h5>
                 <span class="d-inline small"><i class="fa fa-calendar"></i>
                     {{date('d-m-Y',strtotime($item->created_at))}}</span>
-                <div class="custom-isi-berita-index">{!!$item->isi!!}</div>
+                <div class=""></div>
 
 
                 <a href="{{route('posts.show', $item->id)}}" class="more d-inline">Selengkapnya <i
@@ -275,6 +275,6 @@
 <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script>
-
+    $('.custom-isi-berita p > img').unwrap();
 </script>
 @endsection

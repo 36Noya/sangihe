@@ -179,6 +179,12 @@ body {
     text-decoration: none;
 }
 
+.custom-edit {
+    color: var(--primary);
+    font-weight: 700;
+    text-decoration: none;
+}
+
 .image-container {
     position: relative;
     display: inline-block;
@@ -238,6 +244,7 @@ body {
 .carousel img {
     height: 550px;
     object-fit: cover;
+    object-position: 100% 0%;
 }
 
 .carousel-caption {
@@ -342,6 +349,9 @@ body {
 .custom-isi-berita-index>p>img{
     display: none;
 }
+.custom-isi-berita-index>pre>img{
+    display: none;
+}
 
 .custom-isi>table>tbody>tr{
     border: 1px solid black;
@@ -412,4 +422,102 @@ body {
 
 .more:hover{
     color: var(--dark);
+}
+
+/* Sturktur CSS */
+.card {
+    box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
+}
+
+.avatar-md {
+    height: 5rem;
+    width: 5rem;
+}
+
+.fs-19 {
+    font-size: 19px;
+}
+
+.primary-link {
+    color: #314047;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+a {
+    color: #02af74;
+    text-decoration: none;
+}
+
+.bookmark-post .favorite-icon a,
+.job-box.bookmark-post .favorite-icon a {
+    background-color: #da3746;
+    color: #fff;
+    border-color: danger;
+}
+
+.favorite-icon a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #eff0f2;
+    border-radius: 6px;
+    color: rgba(173, 181, 189, .55);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+
+.candidate-list-box .favorite-icon {
+    position: absolute;
+    right: 22px;
+    top: 22px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.bg-soft-secondary {
+    background-color: rgba(116, 120, 141, .15) !important;
+    color: #74788d !important;
+}
+
+.custom-badge:hover{
+    color: var(--white);
+}
+
+.primary-link:hover{
+    color: var(--primary);
+}
+
+.custom-button{
+        border: none;
+            margin: 0;
+            padding: 0;
+            width: auto;
+            overflow: visible;
+        
+            background: transparent;
+        
+            /* inherit font & color from ancestor */
+            color: inherit;
+            font: inherit;
+        
+            /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+            line-height: normal;
+        
+            /* Corrects font smoothing for webkit */
+            -webkit-font-smoothing: inherit;
+            -moz-osx-font-smoothing: inherit;
+        
+            /* Corrects inability to style clickable `input` types in iOS */
+            -webkit-appearance: none;
+}
+
+.custom-hover-dark:hover{
+    color: var(--dark) !important;
 }
