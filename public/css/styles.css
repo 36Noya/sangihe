@@ -531,3 +531,29 @@ a {
     border-color: var(--primary) !important;
     box-shadow: none;
 }
+
+@media screen and (max-width:768px) {
+    .custom-map{
+        overflow: hidden;
+        
+            padding-bottom: 56.25%;
+        
+            position: relative;
+        
+            height: 0;
+    }
+
+        .custom-map iframe {
+    
+            left: 0;
+    
+            top: 0;
+    
+            height: 100%;
+    
+            width: 100%;
+    
+            position: absolute;
+    
+        }
+}
