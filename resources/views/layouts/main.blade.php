@@ -16,6 +16,16 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.css"
         integrity="sha256-NAxhqDvtY0l4xn+YVa6WjAcmd94NNfttjNsDmNatFVc=" crossorigin="anonymous" />
+
+    <link href="{{asset('datatables/datatables.min.css')}}" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    {{-- <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script> --}}
+    {{-- <script src="https://kit.fontawesome.com/9678681ae9.js" crossorigin="anonymous"></script> --}}
+    <script src="{{asset('datatables/datatables.min.js')}}"></script>
+
     <title>Sangihe</title>
 </head>
 
@@ -180,9 +190,6 @@
         </div>
     </div>
     {{-- End Footer --}}
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    {{-- <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script> --}}
-    {{-- <script src="https://kit.fontawesome.com/9678681ae9.js" crossorigin="anonymous"></script> --}}
 
 </body>
 

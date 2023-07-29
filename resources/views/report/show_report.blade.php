@@ -1,7 +1,9 @@
 @extends('layouts.main')
 @section('content')
 <a href="{{route('reports.index')}}">Index Report</a>
-<table>
+
+
+<table id="reports">
     <tr>
         <th>Judul</th>
         <th>Pelapor</th>
@@ -23,4 +25,10 @@
 
     </tr>
 </table>
+
+<script>
+    $('#reports').DataTable( {
+    responsive: true
+    } );
+</script>
 @endsection
