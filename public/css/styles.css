@@ -523,6 +523,10 @@ a {
     color: var(--dark) !important;
 }
 
+.custom-dark-font:hover{
+    color: var(--primary);
+}
+
 .form-control:focus{
     border-color: var(--primary) !important;
     box-shadow: none;
