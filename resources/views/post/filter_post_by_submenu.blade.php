@@ -102,6 +102,15 @@
                             download>Download</a>
                     </div>
                 </div>
+                @if (Auth::check() && Auth::user()->jenis_user === 'admin')
+                <a href="{{route('posts.edit', $post->id)}}" class="btn btn-success mt-2">Edit </a>
+                <form class="p-0" action="{{route('posts.destroy', $post->id)}}" method="post">
+                    @csrf
+                    @method('delete')
+                    <button class="btn btn-primary  mt-2" type="submit">Delete
+                    </button>
+                </form>
+                @endif
             </div>
         </div>
     </div>
