@@ -30,21 +30,84 @@
                             <div class="align-items-center row">
                                 <div class="col-auto">
                                     <div class="candidate-list-images">
-                                        <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt=""
+                                        <a href="#"><img src="{{Storage::url('images/struktur/bupati.jpeg')}}" alt=""
                                                 class="avatar-md img-thumbnail rounded-circle" /></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-5">
                                     <div class="candidate-list-content mt-3 mt-lg-0">
                                         <h5 class="fs-19 mb-0">
-                                            <a class="primary-link">Charles Dickens</a>
+                                            <a class="primary-link">Dr. Rinny Tamuntuan</a>
                                         </h5>
-                                        <p class="text-muted mb-2">Bupati</p>
+                                        <p class="text-muted mb-2">Pejabat Bupati</p>
                                         <ul class="list-inline mb-0 text-muted">
-                                            <li class="list-inline-item"><i class="mdi mdi-map-marker"></i> Oakridge
-                                                Lane Richardson</li>
+                                            <li class="list-inline-item"><i class="mdi mdi-map-marker"></i> Kota Tahuna
+                                            </li>
                                             <li class="list-inline-item">
-                                                <a href="" class="badge custom-badge bg-primary ms-1">Sosmed</a>
+                                                <a href="https://web.facebook.com/meilisa.tindage.3" target="_blank"
+                                                    class="badge custom-badge bg-primary ms-1">Sosmed</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="candidate-list-box border mt-4 shadow-sm">
+                        <div class="p-4 card-body">
+                            <div class="align-items-center row">
+                                <div class="col-auto">
+                                    <div class="candidate-list-images">
+                                        <a href="#"><img src="{{Storage::url('images/struktur/sekda.jpeg')}}" alt=""
+                                                class="avatar-md img-thumbnail rounded-circle" /></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="candidate-list-content mt-3 mt-lg-0">
+                                        <h5 class="fs-19 mb-0">
+                                            <a class="primary-link">Melanchton H. Wolff, ST,
+                                                ME</a>
+                                        </h5>
+                                        <p class="text-muted mb-2">Sekretaris Daerah</p>
+                                        <ul class="list-inline mb-0 text-muted">
+                                            <li class="list-inline-item"><i class="mdi mdi-map-marker"></i> Kota Tahuna
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="https://web.facebook.com/harry.wolff.9" target="_blank"
+                                                    class="badge custom-badge bg-primary ms-1">Sosmed</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="candidate-list-box border mt-4 shadow-sm">
+                        <div class="p-4 card-body">
+                            <div class="align-items-center row">
+                                <div class="col-auto">
+                                    <div class="candidate-list-images">
+                                        <a href="#"><img src="{{Storage::url('images/struktur/as1.jpeg')}}" alt=""
+                                                class="avatar-md img-thumbnail rounded-circle" /></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="candidate-list-content mt-3 mt-lg-0">
+                                        <h5 class="fs-19 mb-0">
+                                            <a class="primary-link">Johanis E. H Pilat, S,Sos, MM</a>
+                                        </h5>
+                                        <p class="text-muted mb-2">Asisten 1</p>
+                                        <ul class="list-inline mb-0 text-muted">
+                                            <li class="list-inline-item"><i class="mdi mdi-map-marker"></i> Kota Tahuna
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="https://web.facebook.com/profile.php?id=100008315776207"
+                                                    target="_blank"
+                                                    class="badge custom-badge bg-primary ms-1">Sosmed</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -55,7 +118,66 @@
                         </div>
                     </div>
 
+                    <div class="candidate-list-box border mt-4 shadow-sm">
+                        <div class="p-4 card-body">
+                            <div class="align-items-center row">
+                                <div class="col-auto">
+                                    <div class="candidate-list-images">
+                                        <a href="#"><img src="{{Storage::url('images/struktur/as2.jpeg')}}" alt=""
+                                                class="avatar-md img-thumbnail rounded-circle" /></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="candidate-list-content mt-3 mt-lg-0">
+                                        <h5 class="fs-19 mb-0">
+                                            <a class="primary-link">Ir. Gregorius D. Londo, ST, SE, M.Sc</a>
+                                        </h5>
+                                        <p class="text-muted mb-2">Asisten 2</p>
+                                        <ul class="list-inline mb-0 text-muted">
+                                            <li class="list-inline-item"><i class="mdi mdi-map-marker"></i> Kota Tahuna
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="https://web.facebook.com/gregorius.londo.3" target="_blank"
+                                                    class="badge custom-badge bg-primary ms-1">Sosmed</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
 
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="candidate-list-box border mt-4 shadow-sm">
+                        <div class="p-4 card-body">
+                            <div class="align-items-center row">
+                                <div class="col-auto">
+                                    <div class="candidate-list-images">
+                                        <a href="#"><img src="{{Storage::url('images/struktur/as3.jpeg')}}" alt=""
+                                                class="avatar-md img-thumbnail rounded-circle" /></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="candidate-list-content mt-3 mt-lg-0">
+                                        <h5 class="fs-19 mb-0">
+                                            <a class="primary-link">Dra. Olga A. Makasidamo</a>
+                                        </h5>
+                                        <p class="text-muted mb-2">Asisten 3</p>
+                                        <ul class="list-inline mb-0 text-muted">
+                                            <li class="list-inline-item"><i class="mdi mdi-map-marker"></i> Kota Tahuna
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="https://web.facebook.com/olga.makasidamo.7" target="_blank"
+                                                    class="badge custom-badge bg-primary ms-1">Sosmed</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
