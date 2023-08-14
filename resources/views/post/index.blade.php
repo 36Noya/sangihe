@@ -169,7 +169,7 @@
     </div>
     <div class="container">
         <div class="row mb-5">
-            <div class="col-md-8 col-sm-12">
+            <div class="col-md-12 col-sm-12">
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
                         <iframe width="100%" style="border-radius: 1em;" height="400"
@@ -181,7 +181,7 @@
                 <div class="row mb-3">
                     @foreach ($photos as $photo)
 
-                    <div class="col-md-6 col-sm-6 image-container">
+                    <div class="col-md-4 col-sm-4 image-container">
                         <img class="img-fluid rounded" style="height: 100%" src="{{url('storage/files/'.$photo->file)}}"
                             alt="Your Image">
                         <div class="image-text">
@@ -197,10 +197,6 @@
 
 
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-12"
-                style="height:92vh; background:red;color:white;border-radius:1em;display:flex; justify-content: center; align-items: center;">
-                <h4>Widget Asean</h4>
             </div>
         </div>
     </div>

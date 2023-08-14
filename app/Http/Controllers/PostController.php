@@ -20,7 +20,7 @@ class PostController extends Controller
     public function index()
     {
         $berita = Post::where('id_submenu', 9)->latest()->take(4)->get();
-        $photos = Post::where('id_submenu', 12)->latest()->take(2)->get();
+        $photos = Post::where('id_submenu', 12)->latest()->take(3)->get();
         $layananPublik = Post::where('id_submenu', 8)->latest()->take(9)->get();
         $visi = Post::where('id_submenu', 1)->get();
 
