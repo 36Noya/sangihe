@@ -1,12 +1,12 @@
 @extends('layouts.tentang_sangihe')
 @section('main-content')
-<div class="judul-post fw-bold d-flex justify-content-center mb-2 fs-4">Ubah Profile</div>
+<div class="judul-post fw-bold d-flex justify-content-center mb-2 fs-4">Ubah Dinas</div>
 @if ($message = Session::get('success'))
 <div class="alert alert-info" role="alert">
     {{$message}}
 </div>
 @endif
-<form action="{{route('users.update', $dinas->id)}}" method="post">
+<form action="{{route('dinas.update', $dinas->id)}}" method="post" enctype="multipart/form-data">
     @csrf
     @method('PATCH')
     @if ($errors->any())
@@ -86,7 +86,7 @@
         <img class="mb-2 custom-logo" src="{{url('storage/files/'.$dinas->logo)}}" alt="">
         <div class="col-md-12">
             <input id="logo" type="file" class="form-control @error('logo') is-invalid @enderror" name="logo"
-                value="{{ old('logo') }}" autocomplete="logo" required autofocus>
+                value="{{ old('logo') }}" autocomplete="logo" autofocus>
 
             @error('logo')
             <span class="invalid-feedback" role="alert">

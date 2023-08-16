@@ -102,17 +102,18 @@ class DinasController extends Controller
             Storage::disk('local')->put('public/files/' . $name, file_get_contents($file));
 
             dinas::where('id', $id)->update([
-                'nama' => $request->judul,
-                'alamat' => $request->isi,
+                'nama' => $request->nama,
+                'alamat' => $request->alamat,
                 'nomor_telepon' => $request->nomor_telepon,
                 'website' => $request->website,
                 'logo' => $name
             ]);
         } else {
             dinas::where('id', $id)->update([
-                'nama' => $request->judul,
-                'alamat' => $request->isi,
+                'nama' => $request->nama,
+                'alamat' => $request->alamat,
                 'nomor_telepon' => $request->nomor_telepon,
+                'website' => $request->website,
             ]);
         }
 
